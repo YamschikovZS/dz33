@@ -10,7 +10,7 @@
 int getPriority(const Token& token)
 {
     if (token.type == "UNARY_MINUS") return 4;
-    if (token.type == "FUNCTION") return 3;
+    if (token.type == "FUNCTION" || token.value == "^") return 3;
     if (token.value == "*" || token.value == "/") return 2;
     if (token.value == "+" || token.value == "-") return 1;
     return 0;
