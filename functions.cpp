@@ -213,6 +213,7 @@ double calculate(const std::vector<Token>& postfix, double x_value)
             else if (token.value == "-") stack.push(a - b);
             else if (token.value == "*") stack.push(a * b);
             else if (token.value == "/") stack.push(a / b);
+            else if (token.value == "^") stack.push(pow(a, b));
         }
         else if (token.type == "FUNCTION")
         {

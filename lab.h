@@ -10,7 +10,7 @@
 #include "lab.h"
 
 inline std::regex num_reg(R"(\d+\.?\d*|\.\d+)");
-inline std::regex op_reg(R"(\+|\-|\*|\/)");
+inline std::regex op_reg(R"(\+|\-|\*|\/|\^)");
 inline std::regex func_reg(R"(sin|cos|tg|ctg|exp)");
 inline std::regex const_reg(R"(E|PI)");
 inline std::regex stap_reg(R"(\(|\))");
